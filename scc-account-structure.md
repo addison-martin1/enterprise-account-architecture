@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-03-29"
+lastupdated: "2023-12-05"
 
 subcollection: enterprise-account-architecture
 
@@ -15,8 +15,8 @@ keywords:
 # Security and Compliance Center account
 {: #scc-account-structure}
 
-The Security and Compliance Center and its dependencies are deployed in the root account of the enterprise to allow the Security and Compliance Center to scan all of the enterprise. 
-{: shortdesc} 
+The Security and Compliance Center and its dependencies are deployed in the root account of the enterprise to allow the Security and Compliance Center to scan all of the enterprise.
+{: shortdesc}
 
 The contents of this account are provisioned through infrastructure as code from the central administration account.
 
@@ -37,6 +37,7 @@ A significant number of users might need to view scan results. As these users ne
 | Business unit access groups | n (1+ per BU) | Used to authorize users from a business unit to view scan results |
 {: caption="Table 1. Components" caption-side="bottom"}
 
+For more information about using a tusted profile to authorize the central administration account to deploy the other components in this account, see [Establishing trust with IBM Cloud services](/docs/account?topic=account-create-trusted-profile&interface=ui#create-profile-services).
 
 ## Rationale for centralizing the Security and Compliance Center
 {: #central-scc}
